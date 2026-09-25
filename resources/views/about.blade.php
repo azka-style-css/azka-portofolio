@@ -1,14 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <!-- Kolom Kiri: Bio & Filosofi -->
     <div class="lg:col-span-7 flex flex-col items-start z-10 pr-0 lg:pr-6">
         <div class="flex items-center gap-2 text-xs tracking-widest font-bold text-slate-500 uppercase mb-6">
             <span class="w-6 h-[2px] bg-slate-400"></span>
             <span>About & Background</span>
         </div>
 
-        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+        <h1 class="dark:text-white text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
             Building with <span class="text-[#ff2b56]">Clarity</span> & Purpose.
         </h1>
 
@@ -16,7 +15,6 @@
             Good outcomes are rarely accidental—they come from patience and iteration. I focus on creating simple, fast, and accessible web experiences with minimal bloat.
         </p>
 
-        <!-- Skill Tags (Pengganti bagian Resume) -->
         <div class="mb-8">
             <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-3">Core Tech Stack</span>
             <div class="flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
@@ -32,7 +30,6 @@
         </a>
     </div>
 
-    <!-- Kolom Kanan: Experience & Timeline (Resume Highlight) -->
     <div class="lg:col-span-5 relative flex flex-col justify-center">
         <div class="absolute inset-0 -z-10 bg-slate-300/40 rounded-full blur-3xl scale-90"></div>
 
@@ -53,7 +50,6 @@
         </div>
     </div>
 
-    <!-- Teks Tepi Vertikal -->
     <div class="hidden xl:flex absolute right-0 bottom-4 items-center gap-3 text-[10px] font-bold tracking-widest text-slate-400 uppercase rotate-90 origin-right">
         <span>Background & Journey</span>
         <span class="w-8 h-[1px] bg-slate-400"></span>

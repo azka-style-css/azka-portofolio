@@ -45,32 +45,35 @@ Route::get('/work', function () {
 
 Route::get('/blog', function () {
     $articles = [
-        'blade-layouts' => [
-            'title' => 'Blade Layouts without Build Steps',
-            'summary' => 'Learn how to architect clean, modular Blade templates using component architecture and CDN assets without Vite compilation overhead.',
+        'lorem-ipsum-dolor' => [
+            'title' => 'Lorem Ipsum Dolor Sit Amet',
+            'summary' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             'date' => 'Sept 2026',
             'read_time' => '5 min read',
+            'detail_url' => '#',
         ],
-        'why-simplicity' => [
-            'title' => 'Why Simplicity Wins in UI Design',
-            'summary' => 'Exploring the philosophy of minimalism in modern web interfaces, stripping away unnecessary bloat, and prioritizing content clarity.',
+        'consectetur-adipiscing' => [
+            'title' => 'Consectetur Adipiscing Elit',
+            'summary' => 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
             'date' => 'Aug 2026',
             'read_time' => '3 min read',
+            'detail_url' => '#',
         ],
-        'tailwind-cdn' => [
-            'title' => 'Mastering Utility-First Styling with Tailwind CDN',
-            'summary' => 'Discover how to rapidly prototype web layouts without waiting for Vite or Node compilation tasks.',
+        'eiusmod-tempor' => [
+            'title' => 'Eiusmod Tempor Incididunt',
+            'summary' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.',
             'date' => 'Jul 2026',
             'read_time' => '7 min read',
+            'detail_url' => '#',
         ],
     ];
 
-    $selectedSlug = request('selected', 'blade-layouts');
+    $selectedSlug = request('selected', 'lorem-ipsum-dolor');
     
-    $activeArticle = $articles[$selectedSlug] ?? $articles['blade-layouts'];
+    $activeArticle = $articles[$selectedSlug] ?? $articles['lorem-ipsum-dolor'];
 
     return view('blog', compact('articles', 'activeArticle', 'selectedSlug'));
-});
+})->name('blog');
 
 route::get('/contact', function () {
     return view('contact');

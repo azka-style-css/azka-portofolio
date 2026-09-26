@@ -37,7 +37,7 @@
         </a>
     </div>
 
-    <div class="lg:col-span-5 relative flex flex-col justify-center">
+    <div class="lg:col-span-5 relative flex flex-col justify-center pr-12 lg:pr-16">
         <div class="absolute inset-0 -z-10 bg-slate-300/40 rounded-full blur-3xl scale-90"></div>
 
         <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-md">
@@ -51,10 +51,10 @@
                 Explore Project Now &rarr;
             </a>
         </div>
-    </div>
 
-    <div class="hidden xl:flex absolute right-0 bottom-4 items-center gap-3 text-[10px] font-bold tracking-widest text-slate-400 uppercase rotate-90 origin-right">
-        <span>Selected Works</span>
-        <span class="w-8 h-[1px] bg-slate-400"></span>
+        <div class="hidden xl:flex absolute right-0 bottom-4 items-center gap-3 text-[10px] font-bold tracking-widest text-slate-400 uppercase rotate-90 origin-right">
+            <span>Selected Works</span>
+            <span class="w-8 h-[1px] bg-slate-400"></span>
+        </div>
     </div>
 @endsection

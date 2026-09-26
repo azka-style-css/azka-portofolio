@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="lg:col-span-7 flex flex-col items-start z-10 pr-0 lg:pr-8">
+    <div class="lg:col-span-7 flex flex-col items-start z-10 pr-0 lg:pr-8 mr-24">
         <div class="flex items-center gap-2 text-xs tracking-widest font-bold text-slate-500 uppercase mb-6">
             <span class="w-6 h-[2px] bg-slate-400"></span>
             <span>About & Background</span>
@@ -21,7 +21,8 @@
                 <span class="bg-slate-200/60 dark:bg-slate-800 px-3.5 py-1.5 rounded-full border border-slate-300/50 dark:border-slate-700">Laravel Blade</span>
                 <span class="bg-slate-200/60 dark:bg-slate-800 px-3.5 py-1.5 rounded-full border border-slate-300/50 dark:border-slate-700">Tailwind CSS</span>
                 <span class="bg-slate-200/60 dark:bg-slate-800 px-3.5 py-1.5 rounded-full border border-slate-300/50 dark:border-slate-700">PHP</span>
-                <span class="bg-slate-200/60 dark:bg-slate-800 px-3.5 py-1.5 rounded-full border border-slate-300/50 dark:border-slate-700">C++</span>
+                <span class="bg-slate-200/60 dark:bg-slate-800 px-3.5 py-1.5 rounded-full border border-slate-300/50 dark:border-slate-700">JavaScript</span>
+                <span class="bg-slate-200/60 dark:bg-slate-800 px-3.5 py-1.5 rounded-full border border-slate-300/50 dark:border-slate-700">MySQL</span>
             </div>
         </div>
 
@@ -30,7 +31,7 @@
         </a>
     </div>
 
-    <div class="lg:col-span-5 relative flex flex-col justify-center pr-12 lg:pr-16 mt-10 lg:mt-0">
+    <div class="lg:col-span-5 relative flex flex-col justify-center pr-12 lg:pr-16 mt-10 lg:mt-0] ml-auto">
         
         <h3 class="text-xs font-bold tracking-widest text-slate-400 uppercase mb-6">Experience Highlights</h3>
 
@@ -65,9 +66,5 @@
 
         </div>
 
-        <div class="hidden xl:flex absolute right-0 bottom-4 items-center gap-3 text-[10px] font-bold tracking-widest text-slate-400 uppercase rotate-90 origin-right">
-            <span>Background & Journey</span>
-            <span class="w-8 h-[1px] bg-slate-400"></span>
-        </div>
     </div>
 @endsection

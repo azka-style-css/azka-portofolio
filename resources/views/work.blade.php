@@ -57,9 +57,5 @@
             </a>
         </div>
 
-        <div class="hidden xl:flex absolute right-0 bottom-4 items-center gap-3 text-[10px] font-bold tracking-widest text-slate-400 uppercase rotate-90 origin-right">
-            <span>Selected Works</span>
-            <span class="w-8 h-[1px] bg-slate-400"></span>
-        </div>
     </div>
 @endsection

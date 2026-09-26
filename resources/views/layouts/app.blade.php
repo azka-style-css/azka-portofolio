@@ -34,6 +34,12 @@
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
         }
     </script>
+
+    <style>
+        @keyframes shimmer {
+            100% { transform: translateX(100%); }
+        }
+    </style>
 </head>
 <body class="bg-[#f4f5f8] text-slate-800 dark:bg-slate-900 dark:text-slate-100 h-screen w-screen overflow-hidden font-sans transition-colors duration-200">
 
@@ -45,11 +51,11 @@
             </div>
 
             <nav class="hidden md:flex items-center gap-14 text-xs font-bold tracking-widest uppercase">
-               <a href="/home" class="{{ request()->is('home') || request()->is('/') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">Home</a>
-               <a href="/about" class="{{ request()->is('about') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">About</a>
-               <a href="/work" class="{{ request()->is('work') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">Work</a>
-               <a href="/blog" class="{{ request()->is('blog') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">Blog</a>
-               <a href="/contact" class="{{ request()->is('contact') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">Contact</a>
+                <a href="/home" class="{{ request()->is('home') || request()->is('/') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">Home</a>
+                <a href="/about" class="{{ request()->is('about') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">About</a>
+                <a href="/work" class="{{ request()->is('work') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">Work</a>
+                <a href="/blog" class="{{ request()->is('blog') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">Blog</a>
+                <a href="/contact" class="{{ request()->is('contact') ? 'text-[#ff2b56]' : 'text-slate-400 hover:text-slate-900 dark:hover:text-white' }} transition">Contact</a>
             </nav>
 
             <div class="text-[10px] font-bold tracking-wider text-slate-400">
@@ -68,8 +74,13 @@
             </div>
         </header>
 
-        <main class="w-full my-auto flex-grow flex items-center justify-center px-40">
+        <main class="relative w-full my-auto flex-grow flex items-center justify-center px-40">
             @yield('content')
+
+            <div class="hidden xl:flex absolute right-1 top-1/2 -translate-y-1/2 items-center gap-3 text-[10px] font-bold tracking-widest text-slate-400 uppercase [writing-mode:vertical-rl] z-10">
+                <span>still skeptism</span>
+                <span class="h-8 w-[1px] bg-slate-400"></span>
+            </div>
         </main>
 
         <footer class="w-full flex items-center justify-between shrink-0">
@@ -85,27 +96,18 @@
                 </a>
             </div>
 
-            <style>
-  @keyframes shimmer {
-    100% { transform: translateX(100%); }
-  }
-</style>
+            <div class="relative inline-flex p-[2.5px] rounded-lg overflow-hidden shadow-[0_0_12px_rgba(255,0,128,0.6)]">
+                <div class="absolute inset-[-100%] bg-[conic-gradient(from_0deg,#ff0055,#ffee00,#00ff66,#00ffff,#a100ff,#ff00aa,#ff0055)] animate-[spin_3s_linear_infinite] brightness-150"></div>
 
-<div class="relative inline-flex p-[2.5px] rounded-lg overflow-hidden shadow-[0_0_12px_rgba(255,0,128,0.6)]">
-  
-  <div class="absolute inset-[-100%] bg-[conic-gradient(from_0deg,#ff0055,#ffee00,#00ff66,#00ffff,#a100ff,#ff00aa,#ff0055)] animate-[spin_3s_linear_infinite] brightness-150"></div>
+                <a href="/qris" class="relative z-10 w-48 h-12 bg-[#ff2b56] hover:bg-[#e02047] rounded-[6px] flex items-center px-3 tracking-widest transition duration-300 overflow-hidden">
+                    <span class="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite_linear] bg-gradient-to-r from-transparent via-white/50 to-transparent pointer-events-none"></span>
 
-  <a href="/qris" class="relative z-10 w-48 h-12 bg-[#ff2b56] hover:bg-[#e02047] rounded-[6px] flex items-center px-3 tracking-widest transition duration-300 overflow-hidden">
-    
-    <span class="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite_linear] bg-gradient-to-r from-transparent via-white/50 to-transparent pointer-events-none"></span>
-
-    <svg class="w-5 h-5 fill-current text-white mr-2 relative z-10 shrink-0" viewBox="0 0 24 24">
-      <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM2 20h20v2H2v-2z"/>
-    </svg>
-    <span class="text-white text-xs font-bold relative z-10 whitespace-nowrap">Buy me a Coffee.</span>
-  </a>
-
-</div>
+                    <svg class="w-5 h-5 fill-current text-white mr-2 relative z-10 shrink-0" viewBox="0 0 24 24">
+                        <path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3zM2 20h20v2H2v-2z"/>
+                    </svg>
+                    <span class="text-white text-xs font-bold relative z-10 whitespace-nowrap">Buy me a Coffee.</span>
+                </a>
+            </div>
         </footer>
 
     </div>

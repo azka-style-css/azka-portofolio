@@ -25,26 +25,28 @@
         </a>
     </div>
 
-    <div class="lg:col-span-5 relative flex flex-col justify-center pr-12 lg:pr-16 mt-10 lg:mt-0">
+    <div class="lg:col-span-5 relative flex flex-col justify-center mt-10 lg:mt-0 ml-auto pr-24">
         
         <h3 class="text-xs font-bold tracking-widest text-slate-400 uppercase mb-6">Direct Channels</h3>
 
-        <div class="space-y-6">
-            <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Email</span>
-                <a href="mailto:azkachirzasc@gmail.com" class="text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 hover:text-[#ff2b56] dark:hover:text-[#ff2b56] transition">
-                    azkachirzasc@gmail.com
-                </a>
+        <div class="w-full space-y-6 mr-48">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 border-b border-slate-200 dark:border-slate-800 pb-6">
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Email</span>
+                    <a href="mailto:azkachirzasc@gmail.com" class="text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 hover:text-[#ff2b56] dark:hover:text-[#ff2b56] transition break-all">
+                        azkachirzasc@gmail.com
+                    </a>
+                </div>
+
+                <div>
+                    <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Location</span>
+                    <span class="text-sm font-semibold text-slate-700 dark:text-slate-300 block">
+                        Bantul, Yogyakarta — Indonesia 🇮🇩
+                    </span>
+                </div>
             </div>
 
-            <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
-                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Location</span>
-                <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">
-                    Bantul, Yogyakarta — Indonesia 🇮🇩
-                </span>
-            </div>
-
-            <div>
+            <div class="border-b border-slate-200 dark:border-slate-800 pb-6">
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Social Platforms</span>
                 <div class="flex items-center gap-4 text-xs font-bold text-[#ff2b56]">
                     <a href="https://github.com/azka-style-css" target="_blank" class="hover:underline">GitHub</a>
@@ -56,9 +58,6 @@
             </div>
         </div>
 
-        <div class="hidden xl:flex absolute right-0 bottom-4 items-center gap-3 text-[10px] font-bold tracking-widest text-slate-400 uppercase rotate-90 origin-right">
-            <span>Say Hello</span>
-            <span class="w-8 h-[1px] bg-slate-400"></span>
-        </div>
     </div>
 @endsection
+

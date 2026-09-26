@@ -78,3 +78,7 @@ Route::get('/blog', function () {
 route::get('/contact', function () {
     return view('contact');
 });
+
+route::get('/qris', function () {
+    return view('qris');
+});

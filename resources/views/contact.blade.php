@@ -20,7 +20,7 @@
             <span>Available for new opportunities</span>
         </div>
 
-        <a href="mailto:azkachirzasc@gmail.com" class="bg-[#ff2b56] hover:bg-[#e02047] text-white text-xs font-bold tracking-widest px-8 py-3 shadow-md transition">
+        <a href="#" class="bg-[#ff2b56] hover:bg-[#e02047] text-white text-xs font-bold tracking-widest px-8 py-3 shadow-md transition">
             Send An Email
         </a>
     </div>
@@ -33,7 +33,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-1 border-b border-slate-200 dark:border-slate-800 pb-6">
                 <div>
                     <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Email</span>
-                    <a href="mailto:azkachirzasc@gmail.com" class="text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 hover:text-[#ff2b56] dark:hover:text-[#ff2b56] transition break-all">
+                    <a href="#" class="text-sm md:text-base font-bold text-slate-800 dark:text-slate-100 hover:text-[#ff2b56] dark:hover:text-[#ff2b56] transition break-all">
                         azkachirzasc@gmail.com
                     </a>
                 </div>
@@ -41,7 +41,7 @@
                 <div>
                     <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Location</span>
                     <span class="text-sm font-semibold text-slate-700 dark:text-slate-300 block">
-                        Bantul, Yogyakarta — Indonesia 🇮🇩
+                        Bantul, Yogyakarta — Indonesia
                     </span>
                 </div>
             </div>

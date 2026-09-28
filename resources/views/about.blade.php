@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full items-center z-10">
-    <!-- Bagian Kiri -->
     <div class="lg:col-span-7 flex flex-col items-start">
         <div class="flex items-center gap-2 text-xs tracking-widest font-bold text-slate-500 uppercase mb-4 md:mb-6">
             <span class="w-6 h-[2px] bg-slate-400"></span>
@@ -33,7 +32,6 @@
         </a>
     </div>
 
-    <!-- Bagian Kanan (Timeline Experience) -->
     <div class="lg:col-span-5 relative flex flex-col justify-center">
         <h3 class="text-xs font-bold tracking-widest text-slate-400 uppercase mb-6">Experience Highlights</h3>
 

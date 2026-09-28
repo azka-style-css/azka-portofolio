@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full items-center z-10">
-    <!-- Gambar QRIS -->
     <div class="lg:col-span-5 relative flex items-center justify-center">
         <div class="absolute inset-0 -z-10 bg-[#ff2b56]/10 rounded-full blur-3xl scale-90"></div>
 
@@ -11,7 +10,6 @@
              class="max-h-[280px] sm:max-h-[350px] md:max-h-[450px] w-auto object-contain rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xl transition-all duration-300">
     </div>
 
-    <!-- Detail Teks -->
     <div class="lg:col-span-7 flex flex-col justify-center items-start">
         <div class="flex items-center gap-2 text-xs tracking-widest font-bold text-slate-500 uppercase mb-4 md:mb-6">
             <span class="w-6 h-[2px] bg-slate-400"></span>
